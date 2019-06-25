@@ -24,6 +24,10 @@ public class Clinter {
         return execute(new Command(cmd));
     }
 
+    public Future<String> execute(CommandTask task) throws IOException {
+        return executor.submit(task);
+    }
+
     public void destroyAll() {
         executor.shutdownNow();
     }
