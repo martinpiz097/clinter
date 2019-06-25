@@ -1,0 +1,2 @@
+- 0.1
+	- Primera subida funcional el software
